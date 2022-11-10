@@ -28,7 +28,7 @@ public class PillController {
 
     private final PillService pillService;
 
-    // 영양제 검색하는 쿼리입니다~
+    // 영양제 검색하는 쿼리입니다~!!
     @GetMapping("/search")
     public ResponseEntity<Page<PillListResponse>> search(@PageableDefault Pageable page, @Valid SearchRequest request) {
         Page<PillListResponse> body = pillService.findBySearchFilter(request, page);
